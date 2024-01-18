@@ -1,29 +1,3 @@
-products = [{
-    image :'images/products/athletic-cotton-socks-6-pairs',
-    name :'Black and Gray Athletic Cotton Socks - 6 Pairs',
-    rating : {
-        stars : 4.5,
-        count : 87,
-    },
-    priceCent : 1090,
-},
-{
-    image :'images/products/intermediate-composite-basketball',
-    name :'ntermediate Size Basketball',
-    rating : {
-        stars : 4.0,
-        count : 127,
-    },
-    priceCent : 2095,
-},
-{
-    image : 'images/products/adults-plain-cotton-tshirt-2-pack-teal',
-    name :'Adults Plain Cotton T-Shirt - 2 Pack',
-    rating : {
-        stars : 4.5,
-        count : 56,
-    },
-    priceCent : 799,}]
 
    
     
@@ -32,7 +6,7 @@ products = [{
     productSHTML += ` <div class="product-container">
     <div class="product-image-container">
       <img class="product-image"
-        src="${product.image}.jpg">
+        src="${product.image}">
     </div>
 
     <div class="product-name limit-text-to-2-lines">
@@ -48,7 +22,7 @@ products = [{
     </div>
 
     <div class="product-price">
-      $${(product.priceCent / 100).toFixed(2)}
+      $${(product.priceCents / 100).toFixed(2)}
     </div>
 
     <div class="product-quantity-container">
